@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "Whatsapp.h"
 #include <string>
 
 #include "SingletonDeUsuarios.h"
@@ -96,10 +97,9 @@ TEST(TestSingletonDeUsuarios, EnviarRecibirMensaje) {
     NOTA_TOTAL += 30;
 }
 
-/*
+
 TEST(TestWhatsapp, EnviarMensaje) {
     string whatsappEsperado = R"({"usuarios":[{"telefono":70700001,"nombre":"Paola","chats":[{"numero":70700002,"mensajesEnviados":[{"fecha":20241201,"tipo":"texto","contenido":"Mandame la foto"}],"mensajesRecibidos":[{"fecha":20241201,"tipo":"archivo","nombre":"Familia","extension":"jpg"}]},{"numero":70700003,"mensajesEnviados":[{"fecha":20241202,"tipo":"texto","contenido":"Como estas?"}],"mensajesRecibidos":[{"fecha":20241203,"tipo":"texto","contenido":"Estoy bien y tu?"}]}]},{"telefono":70700002,"nombre":"Leonardo","chats":[{"numero":70700001,"mensajesEnviados":[{"fecha":20241201,"tipo":"archivo","nombre":"Familia","extension":"jpg"}],"mensajesRecibidos":[{"fecha":20241201,"tipo":"texto","contenido":"Mandame la foto"}]}]},{"telefono":70700003,"nombre":"Elena","chats":[{"numero":70700001,"mensajesEnviados":[{"fecha":20241203,"tipo":"texto","contenido":"Estoy bien y tu?"}],"mensajesRecibidos":[{"fecha":20241202,"tipo":"texto","contenido":"Como estas?"}]}]}],"grupos":[]})";
-
     Whatsapp whatsapp(2);
     int telefonoPaola = 70700001;
     int telefonoElena = 70700003;
@@ -114,9 +114,9 @@ TEST(TestWhatsapp, EnviarMensaje) {
 
     NOTA_TOTAL += 10;
 }
-*/
 
-/*
+
+
 TEST(TestWhatsapp, RegistrarGrupoYAgregarParticipante) {
     string whatsappEsperado = R"({"usuarios":[{"telefono":70700001,"nombre":"Paola","chats":[{"numero":70700002,"mensajesEnviados":[{"fecha":20241201,"tipo":"texto","contenido":"Mandame la foto"}],"mensajesRecibidos":[{"fecha":20241201,"tipo":"archivo","nombre":"Familia","extension":"jpg"}]},{"numero":70700003,"mensajesEnviados":[{"fecha":20241202,"tipo":"texto","contenido":"Como estas?"}],"mensajesRecibidos":[{"fecha":20241203,"tipo":"texto","contenido":"Estoy bien y tu?"}]}]},{"telefono":70700002,"nombre":"Leonardo","chats":[{"numero":70700001,"mensajesEnviados":[{"fecha":20241201,"tipo":"archivo","nombre":"Familia","extension":"jpg"}],"mensajesRecibidos":[{"fecha":20241201,"tipo":"texto","contenido":"Mandame la foto"}]}]},{"telefono":70700003,"nombre":"Elena","chats":[{"numero":70700001,"mensajesEnviados":[{"fecha":20241203,"tipo":"texto","contenido":"Estoy bien y tu?"}],"mensajesRecibidos":[{"fecha":20241202,"tipo":"texto","contenido":"Como estas?"}]}]}],"grupos":[{"nombre":"Programacion 2","descripcion":"Paralelo 3 del semestre 2-2024","participantes":[{"telefono":70700001,"nombre":"Paola"},{"telefono":70700002,"nombre":"Leonardo"}]}]})";
     Whatsapp whatsapp(2);
@@ -132,7 +132,7 @@ TEST(TestWhatsapp, RegistrarGrupoYAgregarParticipante) {
 
     NOTA_TOTAL += 20;
 }
-*/
+
 
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);

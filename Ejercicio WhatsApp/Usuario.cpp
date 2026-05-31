@@ -96,3 +96,8 @@ Chat* Usuario::buscarChat(int telefono)
 	}
 	return nullptr;
 }
+
+string Usuario::getNombre()
+{
+	return nombre;
+}

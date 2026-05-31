@@ -98,16 +98,19 @@
   <ItemGroup>
     <ClInclude Include="Archivo.h" />
     <ClInclude Include="Chat.h" />
+    <ClInclude Include="Grupo.h" />
     <ClInclude Include="Mensaje.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SingletonDeUsuarios.h" />
     <ClInclude Include="Texto.h" />
     <ClInclude Include="Usuario.h" />
     <ClInclude Include="VectorGenerico.h" />
+    <ClInclude Include="Whatsapp.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Archivo.cpp" />
     <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="Grupo.cpp" />
     <ClCompile Include="Mensaje.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -119,6 +122,7 @@
     <ClCompile Include="test.cpp" />
     <ClCompile Include="Texto.cpp" />
     <ClCompile Include="Usuario.cpp" />
+    <ClCompile Include="Whatsapp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

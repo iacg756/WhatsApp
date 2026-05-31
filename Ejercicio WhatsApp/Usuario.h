@@ -26,5 +26,6 @@ public:
 	void enviarMensaje(int telefonoDestino, Mensaje* mensaje);
 	void recibirMensaje(int telefonoOrigen, Mensaje* mensaje);
 	Chat* buscarChat(int telefono);
+	string getNombre();
 };
 
